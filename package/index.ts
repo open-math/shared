@@ -34,7 +34,7 @@ export const defaultAssets = {
         src: 'https://raw.githubusercontent.com/open-math/shared/refs/heads/main/assets/index-page-banner.png',
         maxWidth: '100%',
         invert: 'dark',
-    },
+    } as const,
 };
 
 export const defaultElements = [
@@ -46,10 +46,8 @@ export const defaultElements = [
 ];
 
 export const defaultCountElements = [
-    [
-        'accent_term',
-        'accent_statement',
-        'accent_important',
-        ['problem', 'problems'],
-    ],
+    'accent_term',
+    'accent_statement',
+    'accent_important',
+    ['problem', 'problems'],
 ];
