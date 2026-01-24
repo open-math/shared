@@ -5,7 +5,7 @@
     "": {
       "name": "@open-math/shared",
       "dependencies": {
-        "@erudit-js/prose": "4.0.0-dev.2",
+        "@erudit-js/prose": "4.0.0-dev.3",
       },
     },
   },
@@ -32,9 +32,9 @@
 
     "@chevrotain/utils": ["@chevrotain/utils@11.0.3", "", {}, "sha512-YslZMgtJUyuMbZ+aKvfF3x1f5liK4mWNxghFRv7jqRR9C3R3fAOGTTKvxXDa2Y1s9zSbcpuO0cAxDYsc9SrXoQ=="],
 
-    "@erudit-js/core": ["@erudit-js/core@4.0.0-dev.2", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-egQXiqCNpcHkaefuIu7EseiV1+2+WCByxaUjEpQNb4W7IivNyhiz3WGA/YAZoCILae7pcgHafmkIKXRAfUnmoA=="],
+    "@erudit-js/core": ["@erudit-js/core@4.0.0-dev.3", "", { "dependencies": { "@jsprose/core": "^1.0.0", "gradient-string": "^3.0.0" } }, "sha512-fe1y+CzhfgLZsjRJgwXk1ZQ0HHDGgVWHjPdzojsVi3jdpwdM8HAQcJBjyRBbUXeqXWZ2kdGJ/Czg14CxVB3c9g=="],
 
-    "@erudit-js/prose": ["@erudit-js/prose@4.0.0-dev.2", "", { "dependencies": { "@erudit-js/core": "4.0.0-dev.2", "@floating-ui/vue": "^1.1.9", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.25", "mermaid": "^11.12.1", "photoswipe": "^5.4.4", "vue": "latest" } }, "sha512-XtdkOvaWtyowc7kb0fBkJLHCQ3/t2u1UkfT/1mDdlMohyWhqaDxr8iptgIHS8l2QZxo4Q4TwSchi9VwOe9XZpg=="],
+    "@erudit-js/prose": ["@erudit-js/prose@4.0.0-dev.3", "", { "dependencies": { "@erudit-js/core": "4.0.0-dev.3", "@floating-ui/vue": "^1.1.9", "@jsprose/core": "^1.0.0", "image-size": "^2.0.2", "katex": "^0.16.25", "mermaid": "^11.12.1", "photoswipe": "^5.4.4", "vue": "latest" } }, "sha512-R0/VXaSI/QXfSjurT9scOASVSAk3p0B5UGKo0J+BddCpc+6Tnlo8Wmt37jB4eLI4tLjPoJ8hV8Iy/WFelkWMVQ=="],
 
     "@floating-ui/core": ["@floating-ui/core@1.7.3", "", { "dependencies": { "@floating-ui/utils": "^0.2.10" } }, "sha512-sGnvb5dmrJaKEZ+LDIpguvdX3bDlEllmv4/ClQ9awcmCZrlx5jQyyMWFM5kBI+EyNOCDDiKk8il0zeuX3Zlg/w=="],
 

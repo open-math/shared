@@ -10,6 +10,6 @@
         }
     },
     "dependencies": {
-        "@erudit-js/prose": "4.0.0-dev.2"
+        "@erudit-js/prose": "4.0.0-dev.3"
     }
 }
