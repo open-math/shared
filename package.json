@@ -9,7 +9,10 @@
             "types": "./package/*.ts"
         }
     },
-    "dependencies": {
+    "peerDependencies": {
+        "@erudit-js/prose": "*"
+    },
+    "devDependencies": {
         "@erudit-js/prose": "4.0.0-dev.3"
     }
 }

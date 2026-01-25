@@ -4,8 +4,11 @@
   "workspaces": {
     "": {
       "name": "@open-math/shared",
-      "dependencies": {
+      "devDependencies": {
         "@erudit-js/prose": "4.0.0-dev.3",
+      },
+      "peerDependencies": {
+        "@erudit-js/prose": "*",
       },
     },
   },
