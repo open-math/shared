@@ -1,18 +1,24 @@
 {
-    "name": "@open-math/shared",
-    "version": "1.0.0",
-    "type": "module",
-    "exports": {
-        ".": {},
-        "./*": {
-            "import": "./package/*.ts",
-            "types": "./package/*.ts"
-        }
-    },
-    "peerDependencies": {
-        "@erudit-js/prose": "*"
-    },
-    "devDependencies": {
-        "@erudit-js/prose": "4.0.0-dev.3"
+  "name": "@open-math/shared",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {},
+    "./*": {
+      "import": "./package/*.ts",
+      "types": "./package/*.ts"
     }
+  },
+  "scripts": {
+    "format": "bun prettier --write ."
+  },
+  "peerDependencies": {
+    "erudit": "*",
+    "unslash": "*"
+  },
+  "devDependencies": {
+    "erudit": "4.0.0-dev.5",
+    "prettier": "^3.8.1",
+    "unslash": "^2.0.0"
+  }
 }
