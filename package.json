@@ -4,12 +4,21 @@
   "type": "module",
   "exports": {
     ".": {},
-    "./*": {
-      "import": "./package/*.ts",
-      "types": "./package/*.ts"
+    "./config": {
+      "import": "./dist/config.js",
+      "types": "./dist/config.d.ts"
+    },
+    "./utils": {
+      "import": "./dist/utils/index.js",
+      "types": "./dist/utils/index.d.ts"
+    },
+    "./elements/*": {
+      "import": "./src/elements/*.ts",
+      "types": "./src/elements/*.ts"
     }
   },
   "scripts": {
+    "build": "bun tsc --project tsconfig.src.json",
     "format": "bun prettier --write ."
   },
   "peerDependencies": {
@@ -17,8 +26,10 @@
     "unslash": "*"
   },
   "devDependencies": {
-    "erudit": "4.0.0-dev.5",
+    "erudit": "^4.2.0-dev.1",
     "prettier": "^3.8.1",
-    "unslash": "^2.0.0"
+    "typescript": "^5.9.3",
+    "unslash": "^2.0.0",
+    "vitest": "^4.0.18"
   }
 }

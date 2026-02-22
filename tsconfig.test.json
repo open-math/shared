@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "target": "esnext",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "lib": ["ESNext"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "tsprose",
+    "types": ["tsprose/jsx", "tsprose/externals", "@erudit-js/prose/raw"],
+    "paths": {
+      "@src/*": ["./src/*"]
+    }
+  },
+  "include": ["test/**/*"]
+}
