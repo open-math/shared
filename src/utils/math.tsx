@@ -33,6 +33,9 @@ function wrapExprAnswer(value: AnswerValue, options?: MExprCheckOptions) {
 
 export function MathValueCheck(
   props: MValueCheckOptions & {
+    label?: string;
+    hint?: string;
+    placeholder?: string;
     children?: undefined;
   } & XOR<{ answer: AnswerValue }, { answers: AnswerValue[] }>,
 ) {
@@ -44,7 +47,12 @@ export function MathValueCheck(
   if ('answer' in props) {
     return (
       <>
-        <ProblemCheck answer={wrapAnswer(props.answer!, options)} />
+        <ProblemCheck
+          answer={wrapAnswer(props.answer!, options)}
+          label={props.label}
+          hint={props.hint}
+          placeholder={props.placeholder}
+        />
       </>
     );
   } else {
@@ -52,6 +60,9 @@ export function MathValueCheck(
       <>
         <ProblemCheck
           answers={props.answers.map((a) => wrapAnswer(a, options))}
+          label={props.label}
+          hint={props.hint}
+          placeholder={props.placeholder}
         />
       </>
     );
@@ -60,6 +71,9 @@ export function MathValueCheck(
 
 export function MathExpressionCheck(
   props: MExprCheckOptions & {
+    label?: string;
+    hint?: string;
+    placeholder?: string;
     children?: undefined;
   } & XOR<{ answer: AnswerValue }, { answers: AnswerValue[] }>,
 ) {
@@ -72,7 +86,12 @@ export function MathExpressionCheck(
   if ('answer' in props) {
     return (
       <>
-        <ProblemCheck answer={wrapExprAnswer(props.answer!, options)} />
+        <ProblemCheck
+          answer={wrapExprAnswer(props.answer!, options)}
+          label={props.label}
+          hint={props.hint}
+          placeholder={props.placeholder}
+        />
       </>
     );
   } else {
@@ -80,6 +99,9 @@ export function MathExpressionCheck(
       <>
         <ProblemCheck
           answers={props.answers.map((a) => wrapExprAnswer(a, options))}
+          label={props.label}
+          hint={props.hint}
+          placeholder={props.placeholder}
         />
       </>
     );
