@@ -12,13 +12,13 @@
       "import": "./dist/utils/index.js",
       "types": "./dist/utils/index.d.ts"
     },
+    "./checks/*": {
+      "import": "./dist/checks/*.js",
+      "types": "./dist/checks/*.d.ts"
+    },
     "./elements/*": {
       "import": "./src/elements/*.ts",
       "types": "./src/elements/*.ts"
-    },
-    "./checks/*": {
-      "import": "./src/checks/*.ts",
-      "types": "./src/checks/*.ts"
     }
   },
   "scripts": {
