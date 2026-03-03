@@ -4,6 +4,9 @@ type SingleValue = string | number;
 type AnyOfValue = SingleValue[];
 type AnswerValue = SingleValue | AnyOfValue;
 export declare function MathValueCheck(props: MValueCheckOptions & {
+    label?: string;
+    hint?: string;
+    placeholder?: string;
     children?: undefined;
 } & XOR<{
     answer: AnswerValue;
@@ -21,6 +24,9 @@ export declare function MathValueCheck(props: MValueCheckOptions & {
     __TSPROSE_rawElement: true;
 };
 export declare function MathExpressionCheck(props: MExprCheckOptions & {
+    label?: string;
+    hint?: string;
+    placeholder?: string;
     children?: undefined;
 } & XOR<{
     answer: AnswerValue;

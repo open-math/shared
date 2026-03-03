@@ -26,10 +26,10 @@ export function MathValueCheck(props) {
         definitions: props.definitions,
     };
     if ('answer' in props) {
-        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answer: wrapAnswer(props.answer, options) }) }));
+        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answer: wrapAnswer(props.answer, options), label: props.label, hint: props.hint, placeholder: props.placeholder }) }));
     }
     else {
-        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answers: props.answers.map((a) => wrapAnswer(a, options)) }) }));
+        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answers: props.answers.map((a) => wrapAnswer(a, options)), label: props.label, hint: props.hint, placeholder: props.placeholder }) }));
     }
 }
 export function MathExpressionCheck(props) {
@@ -39,9 +39,9 @@ export function MathExpressionCheck(props) {
         definitions: props.definitions,
     };
     if ('answer' in props) {
-        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answer: wrapExprAnswer(props.answer, options) }) }));
+        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answer: wrapExprAnswer(props.answer, options), label: props.label, hint: props.hint, placeholder: props.placeholder }) }));
     }
     else {
-        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answers: props.answers.map((a) => wrapExprAnswer(a, options)) }) }));
+        return (_jsx(_Fragment, { children: _jsx(ProblemCheck, { answers: props.answers.map((a) => wrapExprAnswer(a, options)), label: props.label, hint: props.hint, placeholder: props.placeholder }) }));
     }
 }
