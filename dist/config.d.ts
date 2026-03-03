@@ -36,4 +36,9 @@ export declare const defaultAssets: {
 };
 export declare const defaultElements: string[];
 export declare const defaultCountElements: (string | string[])[];
+export declare const openMathDependencies: {
+    mathjs: {
+        optimise: boolean;
+    };
+};
 export {};

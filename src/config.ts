@@ -71,3 +71,9 @@ export const defaultCountElements = [
   'accent_important',
   ['problem', 'problems'],
 ];
+
+export const openMathDependencies = {
+  mathjs: {
+    optimise: true,
+  },
+};
