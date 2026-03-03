@@ -62,6 +62,6 @@ export const defaultCountElements = [
 ];
 export const openMathDependencies = {
     mathjs: {
-        optimise: true,
+        optimize: true,
     },
 };
