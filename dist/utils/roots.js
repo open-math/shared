@@ -1,9 +1,9 @@
 import { jsx as _jsx } from "tsprose/jsx-runtime";
 import { ProblemCheck, } from '@erudit-js/prose/elements/problem/problemCheck';
-import { mathRegexp } from './mathRegexp.js';
+import { mValueCheck } from '../checks/mValueCheck.js';
 function toFlexibleValue(value) {
-    if (typeof value === 'string') {
-        return mathRegexp(value);
+    if (typeof value === 'string' || typeof value === 'number') {
+        return mValueCheck(String(value));
     }
     return value;
 }

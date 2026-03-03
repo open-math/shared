@@ -4,7 +4,7 @@ import {
   type ProblemCheckValueDefined,
 } from '@erudit-js/prose/elements/problem/problemCheck';
 
-import { mathRegexp } from './mathRegexp.js';
+import { mValueCheck } from '../checks/mValueCheck.js';
 
 export interface RootsCheckLabels {
   hasRoots: string;
@@ -38,8 +38,8 @@ type RootsCheckProps = {
 function toFlexibleValue(
   value: ProblemCheckValueDefined,
 ): ProblemCheckValueDefined {
-  if (typeof value === 'string') {
-    return mathRegexp(value);
+  if (typeof value === 'string' || typeof value === 'number') {
+    return mValueCheck(String(value));
   }
 
   return value;

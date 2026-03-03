@@ -14,5 +14,6 @@
     "jsxImportSource": "tsprose",
     "types": ["tsprose/jsx", "tsprose/externals", "@erudit-js/prose/raw"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["src/plugin.ts"]
 }
