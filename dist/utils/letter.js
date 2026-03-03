@@ -1,10 +1,16 @@
-export function getRandomLatinLetter(random, casing = 'any') {
+const DEFAULT_SKIP = ['i', 'f', 'g', 'e', 'z'];
+export function getRandomLatinLetter(random, options) {
+    const { casing = 'any', skip = DEFAULT_SKIP } = options ?? {};
     const lowerLetters = 'abcdefghijklmnopqrstuvwxyz';
     const upperLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const letters = casing === 'lower'
+    const skipLower = new Set(skip.map((l) => l.toLowerCase()));
+    const pool = casing === 'lower'
         ? lowerLetters
         : casing === 'upper'
             ? upperLetters
             : lowerLetters + upperLetters;
-    return random.arrayElement(letters.split(''));
+    const filtered = pool
+        .split('')
+        .filter((ch) => !skipLower.has(ch.toLowerCase()));
+    return random.arrayElement(filtered);
 }
