@@ -22,11 +22,6 @@ export declare const defaultAssets: {
         summary: string;
         practice: string;
     };
-    ogImage: {
-        src: string;
-        width: number;
-        height: number;
-    };
     indexPageBanner: {
         readonly src: string;
         readonly maxWidth: "100%";

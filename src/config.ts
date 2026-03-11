@@ -38,11 +38,6 @@ export const defaultAssets = {
     summary: sharedPublic('favicons/summary.svg'),
     practice: sharedPublic('favicons/practice.svg'),
   },
-  ogImage: {
-    src: sharedPublic('og.png'),
-    width: 500,
-    height: 500,
-  },
   indexPageBanner: {
     src: sharedPublic('index-page-banner.png'),
     maxWidth: '100%',
