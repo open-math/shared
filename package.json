@@ -31,11 +31,11 @@
     "unslash": "*"
   },
   "devDependencies": {
-    "erudit": "^4.3.0-dev.1",
+    "erudit": "^4.3.1-dev.1",
     "prettier": "^3.8.1",
     "typescript": "^5.9.3",
     "unslash": "^2.0.0",
-    "vitest": "^4.0.18"
+    "vitest": "^4.1.0"
   },
   "dependencies": {
     "mathjs": "^15.1.1"

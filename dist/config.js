@@ -42,6 +42,14 @@ export const defaultAssets = {
         </svg>
     `,
 };
+export const omathOgImage = {
+    type: 'auto',
+    logotype: './node_modules/@open-math/shared/assets/inject/logotype.svg',
+    siteColor: '#1c6fff',
+};
+export const omathStyle = {
+    brandColor: 'light-dark(#1879d9, #4e94d9)',
+};
 export const defaultElements = [
     '@erudit-js/prose/elements/math',
     '@erudit-js/prose/elements/diagram',

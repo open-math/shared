@@ -29,6 +29,14 @@ export declare const defaultAssets: {
     };
     loadingSvg: string;
 };
+export declare const omathOgImage: {
+    type: "auto";
+    logotype: string;
+    siteColor: string;
+};
+export declare const omathStyle: {
+    brandColor: string;
+};
 export declare const defaultElements: string[];
 export declare const defaultCountElements: (string | string[])[];
 export declare const openMathDependencies: {

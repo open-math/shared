@@ -1,5 +1,6 @@
 import { sn } from 'unslash';
 import type { EruditConfig } from '@erudit-js/core/eruditConfig/config';
+import type { EruditSeoOgImageAuto } from '@erudit-js/core/eruditConfig/seo';
 
 export const translations = {
   en: {
@@ -50,6 +51,16 @@ export const defaultAssets = {
             </path>
         </svg>
     `,
+};
+
+export const omathOgImage = {
+  type: 'auto',
+  logotype: './node_modules/@open-math/shared/assets/inject/logotype.svg',
+  siteColor: '#1c6fff',
+} satisfies Partial<EruditSeoOgImageAuto>;
+
+export const omathStyle = {
+  brandColor: 'light-dark(#1879d9, #4e94d9)',
 };
 
 export const defaultElements = [
